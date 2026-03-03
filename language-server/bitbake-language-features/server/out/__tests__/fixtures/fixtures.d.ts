@@ -1,0 +1,30 @@
+import { TextDocument } from 'vscode-languageserver-textdocument';
+export declare const FIXTURE_URI: {
+    CORRECT: string;
+    DECLARATION: string;
+    COMPLETION: string;
+    HOVER: string;
+    EMBEDDED: string;
+    SEMANTIC_TOKENS: string;
+    DIRECTIVE: string;
+    RENAME: string;
+    BAZ_BBCLASS: string;
+    BAR_INC: string;
+    FOO_INC: string;
+    BITBAKE_CONF: string;
+};
+export declare const FIXTURE_DOCUMENT: {
+    CORRECT: TextDocument;
+    DECLARATION: TextDocument;
+    COMPLETION: TextDocument;
+    HOVER: TextDocument;
+    EMBEDDED: TextDocument;
+    SEMANTIC_TOKENS: TextDocument;
+    DIRECTIVE: TextDocument;
+    RENAME: TextDocument;
+    BAZ_BBCLASS: TextDocument;
+    BAR_INC: TextDocument;
+    FOO_INC: TextDocument;
+    BITBAKE_CONF: TextDocument;
+};
+export declare const DUMMY_URI = "file://dummy_uri.bb";

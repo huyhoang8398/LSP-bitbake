@@ -1,0 +1,7 @@
+{
+	"command": ["${node_bin}", "${server_path}", "--stdio"],
+	"schemes": ["file", "buffer", "res"],
+	"settings": {
+	},
+	"selector": "source.bb",
+}
