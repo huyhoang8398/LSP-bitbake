@@ -57,7 +57,13 @@ popd || exit
 
 pushd "$ORIG_SRC_DIR" || exit
 
+npm run clean
+
 npm install
+
+npm run fetch
+
+npm run compile
 
 popd || exit
 
@@ -88,7 +94,6 @@ pushd "${REPO_DIR}" || exit
 mkdir -p "${DIST_DIR}"
 
 cp -rf "${SRC_DIR}/out" "${DIST_DIR}"
-cp -rf "${SRC_DIR}/node_modules" "${DIST_DIR}/out"
 cp "${SRC_DIR}/package.json" .
 cp "${SRC_DIR}/package-lock.json" .
 
