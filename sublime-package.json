@@ -17,46 +17,6 @@
           ],
           "definitions": {
             "PluginConfig": {
-              "properties": {
-                "initializationOptions": {
-                  "type": "object",
-                  "additionalProperties": false,
-                  "properties": {
-                    "embeddedLanguages": {
-                      "type": "object",
-                      "properties": {
-                        "css": {
-                          "type": "boolean",
-                          "default": true
-                        },
-                        "javascript": {
-                          "type": "boolean",
-                          "default": true
-                        }
-                      },
-                      "additionalProperties": false,
-                    },
-                    "handledSchemas": {
-                      "type": "array",
-                      "items": {
-                        "type": "string"
-                      },
-                      "default": ["file"],
-                      "markdownDescription": "Types of protocols that the server supports for URIs/paths provided through `html.customData`."
-                    },
-                    "provideFormatter": {
-                      "type": "boolean",
-                      "default": true,
-                      "markdownDescription": "Whether server provides formatter capabilities."
-                    }
-                  },
-                },
-                "settings": {
-                  // "additionalProperties": false,
-                  "properties": {
-                  }
-                }
-              }
             }
           }
         }
@@ -71,7 +31,7 @@
               "properties": {
                 "LSP": {
                   "properties": {
-                    "LSP-html": {
+                    "LSP-bitbake": {
                       "$ref": "sublime://settings/LSP-bitbake#/definitions/PluginConfig"
                     }
                   }
